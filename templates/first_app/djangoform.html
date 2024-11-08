@@ -1,0 +1,13 @@
+{% extends "Shared/base.html" %}
+
+{% block content %}
+
+<form class="my-12 flex flex-col items-center gap-5" action="" method="POST">
+    {% csrf_token %}
+    {{musicianForm}}
+    <button class="btn btn-info">Submit</button>
+</form>
+
+<p>{{field}}</p>
+
+{% endblock content %}
